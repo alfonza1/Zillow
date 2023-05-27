@@ -1,0 +1,52 @@
+.search-image {
+    width: 100vw; /* Set width to 100% of the viewport width */
+    height: 95vh;
+    position: fixed; /* Position the element */
+    top: 0%; /* Position it at the top of the viewport */
+    left: 0; /* Position it at the left of the viewport */
+    background-color: #f2f2f2;
+
+    z-index: -1;
+  }
+  
+  .container {
+    position: relative;
+  }
+  
+  .find {
+    position: absolute;
+    top: 10px;
+    left:630px;
+    z-index: 1;
+    color: #27374D;
+   font-family: Sora;
+    font-weight: 600;
+   
+  }
+  
+
+  .search-bar {
+    position: absolute;
+    top: 100px;  /* adjust this value according to your design */
+    left: 630px;  /* adjust this value according to your design */
+    z-index: 1;
+    width: 35vw;  /* adjust this value according to your design */
+    padding: 10px;
+    font-family: Sora;
+    font-size: 17px;
+    height: 30px;
+    font-weight: 50%;
+   
+
+}
+.glass-image {
+  position: absolute;
+  top: 125px;
+  right: 580px; /* Adjust the left value as needed */
+  transform: translateY(-50%);
+  z-index: 2;
+  height: 40px;
+}
+.glass-image:hover {
+  cursor: pointer;
+}
