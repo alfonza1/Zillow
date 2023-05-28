@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { RouterModule } from '@angular/router'; // Import the RouterModule
 import { FeaturedHomesComponent } from './featured-homes.component';
 
 describe('FeaturedHomesComponent', () => {
