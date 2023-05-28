@@ -1,0 +1,23 @@
+
+* {
+    margin: 0;
+     /* Reset default body margin */
+     
+        background-color: transparent;
+        background: transparent;  /* Chrome 10-25, Safari 5.1-6 */
+        background: transparent;
+      
+}
+
+.Trending-Home-Text {
+    font-family: 'Sora', sans-serif;
+    position: absolute;
+   bottom: -90px; /* Adjust the top value according to your design */
+    /* Adjust the left value according to your design */
+    left: 100px;
+}
+.idk{
+position: absolute;
+bottom: -1000px;
+
+}

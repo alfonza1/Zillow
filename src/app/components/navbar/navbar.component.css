@@ -1,5 +1,9 @@
 
-
+*{
+  background-color: transparent;
+  background: transparent;  /* Chrome 10-25, Safari 5.1-6 */
+  background: transparent;
+}
 
 
 .navbar {
@@ -63,7 +67,7 @@
 }
 .navbar-left ul li a:hover,
 .navbar-right ul li a:hover {
- color: #3a7bd5;  
+ color:#19A7CE;  
 }
 
   .navbar-logo {

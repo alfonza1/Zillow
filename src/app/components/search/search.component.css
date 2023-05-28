@@ -1,12 +1,18 @@
+*{
+  background-color: transparent;
+  background: transparent;  /* Chrome 10-25, Safari 5.1-6 */
+  background: transparent;
+}
 .search-image {
-    width: 100vw; /* Set width to 100% of the viewport width */
-    height: 95vh;
-    position: fixed; /* Position the element */
-    top: 0%; /* Position it at the top of the viewport */
-    left: 0; /* Position it at the left of the viewport */
+    width: 98.7vw; /* Set width to 100% of the viewport width */
+    height: 98vh;
+    position: absolute; /* Position the element */
+    top: -50px; /* Position it at the top of the viewport */
+    left: 0px; /* Position it at the left of the viewport */
     background-color: #f2f2f2;
-
     z-index: -1;
+   
+   
   }
   
   .container {
@@ -27,18 +33,27 @@
 
   .search-bar {
     position: absolute;
-    top: 100px;  /* adjust this value according to your design */
-    left: 630px;  /* adjust this value according to your design */
+    top: 100px; /* adjust this value according to your design */
+    left: 630px; /* adjust this value according to your design */
     z-index: 1;
-    width: 35vw;  /* adjust this value according to your design */
+    width: 35vw; /* adjust this value according to your design */
     padding: 10px;
     font-family: Sora;
     font-size: 17px;
     height: 30px;
     font-weight: 50%;
-   
-
-}
+    border: 1px solid lightgray; /* set the border color to gray */
+    transition: border-color 0.3s ease; 
+  }
+  
+  .search-bar:hover {
+    border-color: #19A7CE; /* set the border color on hover */
+  }
+  .search-bar:focus {
+    border-color: #19A7CE;
+    outline: none;  /* set the border color when the search bar is clicked */
+  }
+  
 .glass-image {
   position: absolute;
   top: 125px;
