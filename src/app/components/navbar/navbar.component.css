@@ -3,6 +3,7 @@
   background-color: transparent;
   background: transparent;  /* Chrome 10-25, Safari 5.1-6 */
   background: transparent;
+ 
 }
 
 
@@ -11,9 +12,7 @@
   align-items: center;
   justify-content: space-between;
   background: #27374D;  
-
   padding: 40px;
-
   font-family: roboto;
   z-index: 1;
   margin: -8px -8px 0 -8px;
@@ -79,5 +78,6 @@
   .navbar-logo img {
     height: 35px;
     width: 160px;
+    cursor: pointer;
   }
   

@@ -1,0 +1,76 @@
+footer{
+    bottom: -2000px;
+left: 50%;
+transform: translate(-50%, -50%);
+position: absolute;
+
+}
+
+.foottownimg{
+    width: 1200px; /* Set width to 100% of the viewport width */
+
+}
+.footappstoreimg, .footzillowimg, .footgooglestoreimg, .facebook, .tiktok, .twitter {
+    position: absolute;
+    bottom: 190px;
+cursor: pointer;
+
+}
+
+.twitter{
+    position: absolute;
+    height: 50px;
+    right: 500px;
+    bottom: 185px;
+}
+
+.tiktok{
+    position: absolute;
+    height: 50px;
+    right: 380px;
+    bottom: 188px;
+
+}
+
+
+.footappstoreimg{
+left: 200px;
+
+}
+
+.footgooglestoreimg{
+
+left: 350px;
+
+}
+.footzillowimg{
+    position: absolute;
+ bottom: 220px;
+height: 30px;
+
+
+}
+.facebook{
+    position: absolute;
+height: 35px;
+left: 540px;
+
+}
+
+#imgs{
+position: relative;
+    left: 100px;
+}
+
+p{
+    color: #54545A;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-transform: none;
+    font-family: "Open Sans","Adjusted Arial",Tahoma,Geneva,sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    margin: 0;
+    
+}

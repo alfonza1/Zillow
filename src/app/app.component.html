@@ -2,9 +2,32 @@
 
 
     
-<div class="everything">
+
   <app-navbar></app-navbar>
   <app-search></app-search>
-  <!-- <app-featured-homes></app-featured-homes> -->
-  <router-outlet></router-outlet> <!-- Add this line -->
+  <app-featured-homes></app-featured-homes>
+ 
+  <div class="cards">
+    <div id="cardsid">
+    <div class="buy-content">
+      <img class="buy-image" src="https://lh3.googleusercontent.com/iHoo_N4ocSwn4Flnc9lEb4oNPXge4pZzkHasapCieX4QyjcIdGljl0hYqTVjQXuvYUNP1pX1hXspnayH-ktA4tyNfpdAOt1lJI_cl3w" alt="Buy a home">
+      <h2 class="Buy">Buy a home</h2>
+      <p class="Buy-text">Find your place with an immersive photo experience and the most listings, including things you won’t find anywhere else.</p>
+      </div>
+      
+      <div class="sell-content">
+        <img class="sell-image" src="https://lh3.googleusercontent.com/KMnQzTUnija2r9pSmvDHnD1QivmuJAIJSDc9vITd3xIrJgtqbEi9VOAE8EEauBewG3DlqI-F6Qswxkimp8U45PRcgP6emamZ-UwGId9-" alt="sell a home">
+      <h2 class="sell">Sell a home</h2>
+      <p class="sell-text"> No matter what path you take to sell your home, we can help you navigate a successful sale.</p>
+       </div>
+
+      <div class = rent-content>
+        <img class="rent-image" src="https://lh3.googleusercontent.com/PgrpiLHnoFjOUq805aBDBLO60G7JyV1QJKINpdr8bFKskoVxMF1do0Vr6hXAdS9p24MXmnpHLXduUigaolQt9h7BUTNapBMCqPafqUgI" alt="rent a home">
+     <h2 class="rent">Rent a home</h2>
+      <p class="rent-text">We’re creating a seamless online experience – from shopping on the largest rental network, to applying, to paying rent.</p>
+      </div>
 </div>
+      </div>
+<app-footer></app-footer>
+  <router-outlet></router-outlet> <!-- Add this line -->
+

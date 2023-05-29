@@ -7,5 +7,7 @@ export interface Housesinterface {
     availableUnits: number;
     wifi: string;
     laundry: string;
+    bed: string;
+    bath: string;
   }
    

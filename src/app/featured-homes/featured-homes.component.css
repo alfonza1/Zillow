@@ -2,7 +2,7 @@
 * {
     margin: 0;
      /* Reset default body margin */
-     
+    
         background-color: transparent;
         background: transparent;  /* Chrome 10-25, Safari 5.1-6 */
         background: transparent;
@@ -15,9 +15,114 @@
    bottom: -90px; /* Adjust the top value according to your design */
     /* Adjust the left value according to your design */
     left: 100px;
+    color: rgb(53, 53, 53);
 }
-.idk{
-position: absolute;
-bottom: -1000px;
+
+.arrow{
+position:absolute;
+bottom: -450px;
+right:200px;
+cursor: pointer;
+transition: transform 0.3s ease, box-shadow 0.5s ease;
+}
+
+
+.arrow:hover{
+    transform: scale(1.2);
+
+    }
+    
+
+
+.grid-container {
+    display: grid;
+    position: absolute;
+    grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns as required */
+    grid-template-rows:  repeat(4, 1fr);
+    align-items: start; /* Make the items start from the bottom */
+    bottom: -1000px; /* Create space at the bottom */
+    left: 103px;
+    gap: 40px;
+  
+}
+
+.listing-list li {
+    background: #f9f9f9;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.listing {
+    /* Add any styles you want for each listing */
+    list-style: none;
+    padding: 0;
 
 }
+
+.listing-photo {
+    width: 300px; 
+    height: 150px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  }
+  
+  .listing-photo:hover {
+    transform: scale(1.05); /* Scale up the image by 5% on hover */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+   
+}
+
+
+.listing-heading {
+    /* Add any styles you want for the listing heading */
+    font-family: 'Sora', sans-serif;
+    font-size: 16px;
+    color: rgb(58, 58, 58);
+    cursor: pointer;
+}
+
+.listing-bednbathp{
+    /* Add any styles you want for the listing location */
+    font-family: sora;
+    font-size: 12px;
+    color: #383838;
+    
+}
+.bedbath:hover{
+    cursor: pointer;
+}
+.bedbath{
+    
+    
+}
+
+
+/* .hidden {
+    display: none;
+}
+
+.show-more-btn {
+    cursor: pointer;
+    background: #008CBA; 
+    color: white; 
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 2px;
+    bottom: -190px;
+    position: absolute;
+    left: 100px;
+
+}
+
+.show-more-btn:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+ */
+

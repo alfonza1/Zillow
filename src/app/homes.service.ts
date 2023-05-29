@@ -9,104 +9,149 @@ export class HousingService {
   protected housesinterface: Housesinterface[] = [
     {
       id: 0,
-      name: 'Acme Fresh Start Housing',
-      city: 'Chicago',
-      state: 'IL',
-      photo: '/assets/bernard-hermant-CLKGGwIBTaY-unsplash.jpg',
+      name: '125 Idaho Ave, Los Angeles, CA 90025',
+      city: 'Los Angeles',
+      state: 'CA',
+      photo: 'https://photos.zillowstatic.com/fp/f31befdb72a0190e7b32fc174f5368b2-cc_ft_1536.jpg',
       availableUnits: 4,
       wifi: "yes",
-      laundry: "yes"
-    },
-    {
+      laundry: "yes",
+      bed: "3",
+      bath: "2"
+      },
+      {
       id: 1,
-      name: 'A113 Transitional Housing',
+      name: '1112 2nd St , Los Angeles, CA 90025',
       city: 'Santa Monica',
       state: 'CA',
-      photo: '/assets/brandon-griggs-wR11KBaB86U-unsplash.jpg',
+      photo: 'https://www.techspot.com/images2/news/bigimage/2021/11/2021-11-02-image-27.jpg',
       availableUnits: 0,
       wifi: "yes",
-      laundry: "yes"
-    },
-    {
+      laundry: "yes",
+      bed: "3",
+      bath: "3"
+      },
+      {
       id: 2,
-      name: 'Warm Beds Housing Support',
-      city: 'Juneau',
-      state: 'AK',
-      photo: '/assets/i-do-nothing-but-love-lAyXdl1-Wmc-unsplash.jpg',
-      availableUnits: 1,
-      wifi: "yes",
-      laundry: "yes"
-    },
-    {
-      id: 3,
-      name: 'Homesteady Housing',
+      name: '999 Juice Rd, Chicago, IL 18483',
       city: 'Chicago',
       state: 'IL',
-      photo: '/assets/ian-macdonald-W8z6aiwfi1E-unsplash.jpg',
+      photo: 'https://wp-tid.zillowstatic.com/bedrock/app/uploads/sites/41/real-estate-contingencies-3d4ab5-1024x695.jpg',
       availableUnits: 1,
       wifi: "yes",
-      laundry: "yes"
-    },
-    {
+      laundry: "yes",
+      bed: "4",
+      bath: "3"
+      },
+      {
+      id: 3,
+      name: '21 Bridal Path, Toronto, ON 18483',
+      city: 'Toronto',
+      state: 'ON',
+      photo: 'https://www.houseporn.ca/media/uploads/blog/drake_1.jpg',
+      availableUnits: 1,
+      wifi: "yes",
+      laundry: "yes",
+      bed: "5",
+      bath: "4"
+      },
+      {
       id: 4,
-      name: 'Happy Homes Group',
-      city: 'Gary',
-      state: 'IN',
-      photo: '/assets/krzysztof-hepner-978RAXoXnH4-unsplash.jpg',
+      name: '63432 Terry St, Wilmington, De 19802',
+      city: 'Wilmington',
+      state: 'De',
+      photo: 'https://images.marketleader.com/HouseImages/WIREX/554/f_1830554.jpg?PhotoAccessKey=0d6cbd693a838f27a4e3110d2f674591',
       availableUnits: 1,
       wifi: "yes",
-      laundry: "yes"
-    },
-    {
+      laundry: "yes",
+      bed: "3",
+      bath: "4"
+      },
+      {
       id: 5,
-      name: 'Hopeful Apartment Group',
+      name: '32 Aree St, Oakland, CA 19222',
       city: 'Oakland',
       state: 'CA',
-      photo: '/assets/r-architecture-JvQ0Q5IkeMM-unsplash.jpg',
-      availableUnits: 2,
+      photo: 'https://rochesterlawcenter.com/wp-content/uploads/2022/01/putting-a-house-into-a-trust-768x576.jpg',
+      availableUnits: 1,
       wifi: "yes",
-      laundry: "yes"
-    },
-    {
+      laundry: "yes",
+      bed: "3",
+      bath: "2"
+      },
+      {
       id: 6,
-      name: 'Seriously Safe Towns',
-      city: 'Oakland',
+      name: '2 Sasuke Ave, San Diego, CA 19222',
+      city: 'San Diego',
       state: 'CA',
-      photo: '/assets/phil-hearing-IYfp2Ixe9nM-unsplash.jpg',
+      photo: 'https://media.architecturaldigest.com/photos/59de8016b237417e2f905bf2/16:9/w_2580,c_limit/01_RCHS-WD_Grazer_Ellis_247-Edit-Edit.jpg',
       availableUnits: 5,
       wifi: "yes",
-      laundry: "yes"
-    },
-    {
+      laundry: "yes",
+      bed: "4",
+      bath: "3"
+      },
+      {
       id: 7,
-      name: 'Hopeful Housing Solutions',
-      city: 'Oakland',
-      state: 'CA',
-      photo: '/assets/r-architecture-GGupkreKwxA-unsplash.jpg',
-      availableUnits: 2,
-      wifi: "yes",
-      laundry: "yes"
-    },
-    {
-      id: 8,
-      name: 'Seriously Safe Towns',
-      city: 'Oakland',
-      state: 'CA',
-      photo: '/assets/saru-robert-9rP3mxf8qWI-unsplash.jpg',
-      availableUnits: 10,
-      wifi: "yes",
-      laundry: "yes"
-    },
-    {
-      id: 9,
-      name: 'Capital Safe Towns',
+      name: '3294 Sand St, Portland, OR 19222',
       city: 'Portland',
       state: 'OR',
-      photo: '/assets/webaliser-_TPTXZd9mOo-unsplash.jpg',
-      availableUnits: 6,
+      photo: 'https://d1ja9tyo8nbkbc.cloudfront.net/45866257_S0020/S0020/S0020-R0100/NWM2070424/NWM134738160.jpg?version=1684595295&width=1024',
+      availableUnits: 2,
       wifi: "yes",
-      laundry: "yes"
-    }
+      laundry: "yes",
+      bed: "3",
+      bath: "2"
+      },
+      {
+      id: 8,
+      name: '10048 Will St, Oakland, CA 19222',
+      city: 'Oakland',
+      state: 'CA',
+      photo: 'https://images.estately.net/139_NWM2033041_0_1675960698_636x435.jpg',
+      availableUnits: 10,
+      wifi: "yes",
+      laundry: "yes",
+      bed: "5",
+      bath: "3"
+      },
+      {
+      id: 9,
+      name: '3622 Care St, Miami, FL 19222',
+      city: 'Miami',
+      state: 'FL',
+      photo: 'https://www.papercitymag.com/wp-content/uploads/2021/07/img-1-1-1.jpeg',
+      availableUnits: 1,
+      wifi: "yes",
+      laundry: "yes",
+      bed: "3",
+      bath: "2"
+      },
+      {
+      id: 10,
+      name: 'Darley Green Apartments',
+      city: 'Claymont',
+      state: 'De',
+      photo: 'https://rentpath-res.cloudinary.com/$img_current/t_3x2_webp_xl/7c00a86129eeb6bf981aa57650a2cbfe',
+      availableUnits: 10,
+      wifi: "yes",
+      laundry: "yes",
+      bed: "2",
+      bath: "2"
+      },
+      {
+      id: 11,
+      name: 'Lavere Realty Apartments',
+      city: 'Oakland',
+      state: 'CA',
+      photo: 'https://exej2saedb8.exactdn.com/wp-content/uploads/2022/02/Screen-Shot-2022-02-04-at-2.28.40-PM.png?strip=all&lossy=1&ssl=1',
+      availableUnits: 10,
+      wifi: "yes",
+      laundry: "yes",
+      bed: "2",
+      bath: "2"
+      }
+    
   ];
 
   getAllHousingLocations(): Housesinterface[] {
