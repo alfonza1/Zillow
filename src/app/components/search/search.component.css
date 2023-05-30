@@ -5,13 +5,13 @@
 }
 .search-image {
     width: 98.7vw; /* Set width to 100% of the viewport width */
-    height: 98vh;
+    height: 92.5vh;
     position: absolute; /* Position the element */
-    top: -50px; /* Position it at the top of the viewport */
-    left: 0px; /* Position it at the left of the viewport */
+    top: 0px; /* Position it at the top of the viewport */
+    left: -2px; /* Position it at the left of the viewport */
     background-color: #f2f2f2;
     z-index: -1;
-   
+
    
   }
   

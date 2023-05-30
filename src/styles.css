@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 *{
-    background: white;  /* fallback for old browsers */
+    background: #E6FFFD;  /* fallback for old browsers */
    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+    z-index: 0;
 }
+

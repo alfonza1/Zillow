@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { HousingService } from '../../homes.service';
 import { Housesinterface } from '../../housesinterface';
 
@@ -9,15 +9,15 @@ import { Housesinterface } from '../../housesinterface';
   styleUrls: ['./home-items.component.css']
 })
 export class HomeItemsComponent implements OnInit {
-  house?: Housesinterface; // house can potentially be undefined
+  house: Housesinterface | undefined; // change the type here
 
-  constructor(private route: ActivatedRoute, private housingService: HousingService) { }
+  constructor(private route: ActivatedRoute, private housingService: HousingService, private router: Router) { }
 
   ngOnInit(): void {
-    const id = this.route.snapshot.paramMap.get('id');
-    if (id) { // check if id is not null
-      const houseId = +id;
-      this.house = this.housingService.getHousingLocationById(houseId);
+    const id = Number(this.route.snapshot.paramMap.get('id')); // convert to number here
+    if(id !== null) { // check if id is not null
+        this.house = this.housingService.getHousingLocationById(id);
     }
   }
+ 
 }

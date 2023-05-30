@@ -1,0 +1,17 @@
+
+
+
+    <h3 class="Trending-Home-Text">Trending Homes in the United States</h3>
+  
+    <img class="arrow" src="assets\arrow_forward_ios_FILL0_wght400_GRAD0_opsz48.png" alt="">
+    <div class="grid-container">
+        <section class="listing" *ngFor="let house of houses" (click)="onHouseClick(house)">
+            <img class="listing-photo" [src]="house.photo" [alt]="'Exterior photo of ' + house.name">
+            <div class="bedbath">
+                <h2 class="listing-heading">{{ house.name }}</h2>
+                <p class="listing-bednbathp"> {{ house.bed }} bds | {{ house.bath }} ba for Sale/Rent</p>
+            </div>
+        </section>
+  </div>
+  
+    

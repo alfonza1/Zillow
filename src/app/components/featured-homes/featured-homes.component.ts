@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { HousingService } from '../homes.service';
-import { Housesinterface } from '../housesinterface';
+import { HousingService } from '../../homes.service';
+import { Housesinterface } from '../../housesinterface';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-featured-homes',
@@ -10,9 +12,15 @@ import { Housesinterface } from '../housesinterface';
 export class FeaturedHomesComponent implements OnInit {
   houses: Housesinterface[] = []; // Define houses here
 
-  constructor(private housingService: HousingService) { }
+  constructor(private router: Router, private housingService: HousingService) { 
+
+  }
 
   ngOnInit(): void {
     this.houses = this.housingService.getAllHousingLocations();
+  }
+
+  onHouseClick(house: Housesinterface): void {
+    this.router.navigate(['/home-items', house.id]);
   }
 }

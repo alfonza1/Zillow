@@ -1,2 +1,22 @@
-<p>home-items works!</p>
-
+<div class="everything">
+    <app-navbar></app-navbar>
+    <div *ngIf="house">
+        <div class="container">
+            <img class="housephoto" [src]="house.photo" alt="House image">
+            <div class="house-items">
+                <h4 id="housename">
+                    <b>{{house.name}}</b>
+                </h4>
+                <p>City: <span class="city">{{house.city}}</span></p> 
+                <p>State: <span class="state">{{house.state}}</span></p>
+                <p>Available Units: <span class="units">{{house.availableUnits}}</span></p>
+                <p>Wifi: <span class="wifi">{{house.wifi}}</span></p>
+                <p>Laundry: <span class="laundry">{{house.laundry}}</span></p>
+                <p>Beds: <span class="bed">{{house.bed}}</span></p>
+                <p>Bath: <span class="bath">{{house.bath}}</span></p> 
+            </div>
+        </div>
+    </div>
+    <app-buy-sell-rent-cards></app-buy-sell-rent-cards>
+    <app-footer></app-footer>
+</div>

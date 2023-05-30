@@ -1,0 +1,84 @@
+*{
+
+    background-color: transparent;
+}
+
+
+
+.cards {
+
+    justify-content: space-between;
+    flex-wrap: wrap;
+   position: absolute;
+    cursor: pointer;
+    
+}
+.buy-content, .sell-content, .rent-content {
+    background-color: white;
+    top:1850px;
+   padding: 20px;
+    width: 300px;
+    height: 400px;
+    position: relative; /* Added for absolute positioning to work */
+    left: 1550px; /* This might not be necessary and could be disrupting the layout */
+    display: flex; /* Added for alignment purposes */
+    flex-direction: column; /* Added for alignment purposes */
+    justify-content: space-between; /* Added for alignment purposes */
+    align-items: center; /* Added for alignment purposes */
+    text-align: center; /* Align the text to the center */
+    box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease, box-shadow 0.5s ease;
+}
+
+.buy-content:hover, .sell-content:hover, .rent-content:hover {
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.6);
+    transform: translateY(-5px);
+    transform: scale(1.03); 
+}
+
+.Buy, .sell, .rent {
+    font-family: 'Sora', sans-serif;
+    font-size: 22px;
+    color: #333;
+   
+}
+
+.Buy-text, .sell-text, .rent-text {
+    font-family: 'Sora', sans-serif;
+    font-size: 16px;
+    color: #666;
+}
+.buy-content{
+    position: absolute;
+    left: 1100px;
+}
+.sell-content{
+    position: absolute;
+    left: 600px;
+
+} 
+
+.rent-content{
+    position: absolute;
+left: 100px;
+}
+
+
+.buy-image{
+width: 300px;
+height: 200px;
+}
+.sell-image{
+    width: 300px;
+    height: 200px;
+    }
+    .rent-image{
+        width: 300px;
+        height: 200px;
+        }
+
+        #cardsid{
+            position: absolute;
+        left: 90px;
+
+        }

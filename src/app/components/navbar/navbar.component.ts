@@ -5,8 +5,13 @@ import { Router } from '@angular/router';
   selector: 'app-navbar',
   
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.css']
+  styleUrls: ['./navbar.component.css'],
+  
 })
 export class NavbarComponent {
- 
+  showLoginForm = false;
+
+  toggleLoginForm() {
+    this.showLoginForm = !this.showLoginForm;
+  }
 }
