@@ -3,6 +3,7 @@
   background: transparent;  /* Chrome 10-25, Safari 5.1-6 */
   background: transparent;
 }
+
 .search-image {
     width: 98.7vw; /* Set width to 100% of the viewport width */
     height: 92.5vh;
@@ -11,13 +12,13 @@
     left: -2px; /* Position it at the left of the viewport */
     background-color: #f2f2f2;
     z-index: -1;
-
-   
   }
   
+
   .container {
     position: relative;
   }
+  
   
   .find {
     position: absolute;
@@ -32,19 +33,20 @@
   
 
   .search-bar {
-    position: absolute;
-    top: 100px; /* adjust this value according to your design */
-    left: 630px; /* adjust this value according to your design */
+    position: relative; /* Updated */
+    top: 100px;
+    left: 630px;
     z-index: 1;
-    width: 35vw; /* adjust this value according to your design */
+    width: 35vw;
     padding: 10px;
     font-family: Sora;
     font-size: 17px;
     height: 30px;
     font-weight: 50%;
-    border: 1px solid lightgray; /* set the border color to gray */
-    transition: border-color 0.3s ease; 
+    border: 1px solid lightgray;
+    transition: border-color 0.3s ease;
   }
+  
   
   .search-bar:hover {
     border-color: #19A7CE; /* set the border color on hover */
@@ -56,10 +58,10 @@
   
 .glass-image {
   position: absolute;
-  top: 125px;
-  right: 580px; /* Adjust the left value as needed */
+  top: 241%;
+  right: 566px;  /* Adjust the left value as needed */
   transform: translateY(-50%);
-  z-index: 2;
+  z-index: 9999;
   height: 40px;
 }
 .glass-image:hover {

@@ -1,22 +1,27 @@
-<div class="everything">
-    <app-navbar></app-navbar>
+
+    <app-navbar class="home-items-navbar"></app-navbar>
+
     <div *ngIf="house">
         <div class="container">
             <img class="housephoto" [src]="house.photo" alt="House image">
             <div class="house-items">
-                <h4 id="housename">
-                    <b>{{house.name}}</b>
-                </h4>
-                <p>City: <span class="city">{{house.city}}</span></p> 
-                <p>State: <span class="state">{{house.state}}</span></p>
-                <p>Available Units: <span class="units">{{house.availableUnits}}</span></p>
-                <p>Wifi: <span class="wifi">{{house.wifi}}</span></p>
-                <p>Laundry: <span class="laundry">{{house.laundry}}</span></p>
-                <p>Beds: <span class="bed">{{house.bed}}</span></p>
-                <p>Bath: <span class="bath">{{house.bath}}</span></p> 
+                
+                <h4 id="housename"> {{house.name}} </h4>
+
+               <p>City: <span class="cityonly">{{house.city}}</span></p> 
+                <p>State: <span class="stateonly">{{house.state}}</span></p>
+                <p>Available Units: <span class="unitsnumber">{{house.availableUnits}}</span></p>
+                <p>Wifi: <span class="wifiboolean">{{house.wifi}}</span></p>
+                <p>Laundry: <span class="laundryboolean">{{house.laundry}}</span></p>
+               
+                <section class="items-container">
+                      <p class="bed"> <span id="beds">BEDS</span> <span class="bednumber"> {{house.bed}}</span></p>
+                 <p > <span id="baths"> BATHS </span><span class="bathnumber"> {{house.bath}} </span></p> 
+                 <p> <span id="sqft">SQFT</span> <span class="sqftnumber">6,200</span> </p>
+            </section>
             </div>
         </div>
     </div>
     <app-buy-sell-rent-cards></app-buy-sell-rent-cards>
     <app-footer></app-footer>
-</div>
+

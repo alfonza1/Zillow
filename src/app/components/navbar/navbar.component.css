@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
   background-color: transparent;
-  background: transparent;  /* Chrome 10-25, Safari 5.1-6 */
   background: transparent;
-
 }
 
 
@@ -13,9 +11,9 @@
   align-items: center;
   justify-content: space-between;
   background: #27374D;
-  padding: 40px;
+  padding: 2%;
   font-family: roboto;
-  z-index: 2; /* Increase the z-index value */
+  z-index: 2;
   margin: -8px -8px 0 -8px;
 }
 
@@ -23,12 +21,10 @@
 .navbar-left {
   display: flex;
   align-items: center;
-  margin-top: 1px;
-  margin-left: 295px;
   position: absolute;
-  top: 30px; 
-  left: 0;
-  color: 	white;
+  top: 30px;
+  left: 15%;
+  color: white;
   font-size: 100%;
   cursor: pointer;
 }
@@ -38,9 +34,8 @@
   align-items: center;
   position: absolute;
   top: 30px;
-  margin-right: 370px;
-  right: 0;
-  color: 	white;
+  right: 18%;
+  color: white;
   font-size: 100%;
   cursor: pointer;
 }
@@ -73,36 +68,54 @@
  color:#19A7CE;  
 }
 
-.title{
-
-  color: black;
+.navbar-logo {
+  position: absolute;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
+.navbar-logo img {
+  height: 35px;
+  width: 160px;
+  cursor: pointer;
+}
+
+.container {
+  background: white;
+  max-width: 90%;
+  width: 350px;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  cursor: auto;
+  margin: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar-left,
+  .navbar-right {
+    position: static;
+    margin: auto;
+  }
+  
   .navbar-logo {
-    position: absolute;
-    top: 24px;
-    left: 872px;
-  }
-  
-  .navbar-logo img {
-    height: 35px;
-    width: 160px;
-    cursor: pointer;
-  }
-  
-  .container {
-    background: white;
-    max-width: 350px;
-    width: 100%;
-    padding: 25px 30px;
-    border-radius: 5px;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    cursor: auto;
-   
+    position: static;
+    transform: none;
+    margin: auto;
   }
 
+  .container {
+    width: 95%;
+    padding: 10px;
+  }
   
+  .navbar {
+    flex-direction: column;
+  }
+}
+
   .container form .title {
     font-size: 30px;
     font-weight: 600;

@@ -1,17 +1,13 @@
 
 .everything{
-
+ 
 }
 
 .container {
-    position: absolute;
+    position: relative;
     transition: 0.3s;
-    width: 40%;
     margin: auto;
-    margin-bottom: 20px;
-    bottom: 749px;
-    right: 574px;
-    
+
 }
 
 .container:hover {
@@ -20,8 +16,7 @@
 
 .house-items {
     position: absolute;
-    top: 20px;
-    right: -550px;
+ 
     font-family: sora;
     background: transparent;
     background-color: transparent;
@@ -31,36 +26,76 @@
 
 app-buy-sell-rent-cards {
     position: absolute;  /* or absolute, depending on your design */
-    top: -700px;  /* adjust as necessary */
+    top: 1000px;  /* adjust as necessary */
   }
   
   app-footer{
     position: absolute;
-    top: 300px;
+    top: 1900px;
     left: 50%;
   }
-  .housephoto{
-position: absolute;
-right: -170px;
-width: 1500px;
-    height: 890px;
-    top: -120px;
- 
+
+
+  .home-items-navbar ::ng-deep .navbar {
+    background-color: transparent;
+
   }
+  
+
+
+  .housephoto {
+    position: relative;
+    width: 100.4%; /* Changed to 100% of the container's width */
+    height: 72.5vh;
+    top: -75px;
+   right: 3px;
+   
+}
+
 
   #housename{
     position: relative;
-font-family: sora;
+font-family: sans-serif;
 font-size:larger;
 background: transparent;
 overflow-wrap: break-word;
     white-space: normal;
+   left: 750px;
+   top: -80px;
+    z-index: 2;
+    background: transparent;
+
   }
 
-  .city, .state, .units, .wifi, .laundry, .bed, .bath {
+  .cityonly, .stateonly, .unitsnumber, .wifiboolean, .laundryboolean, .bednumber, .bathnumber,.sqftnumber {
     position: relative;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sora;
     font-size: 90%;
-    font-weight:lighter;
-    
+    font-weight: 500;
+    left: 6px;
+  
   }
+  
+  .items-container {
+    display: flex;  /* Use flex instead of grid */
+    position: relative;
+    align-items: center;  /* Aligns items vertically in the middle */
+     /* Distributes items evenly with equal space around them */
+    bottom: 270px;
+    left: 750px;
+    gap: 70px;
+    font-family: sora;
+    font-size: 100%;
+    font-weight: 500;
+  
+}
+
+#beds,#baths, #sqft {
+  font-family: sans-serif;
+  color: #717374;
+
+}
+
+.sqftnumber{
+  left: 7px;
+}
