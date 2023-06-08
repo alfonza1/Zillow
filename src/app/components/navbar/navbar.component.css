@@ -2,6 +2,7 @@
 *{
   background-color: transparent;
   background: transparent;
+  
 }
 
 
@@ -11,18 +12,19 @@
   align-items: center;
   justify-content: space-between;
   background: #27374D;
-  padding: 2%;
+  padding: 17px;
   font-family: roboto;
   z-index: 2;
   margin: -8px -8px 0 -8px;
+
 }
 
 
 .navbar-left {
   display: flex;
   align-items: center;
-  position: absolute;
-  top: 30px;
+  position: relative;
+  top: 5px;
   left: 15%;
   color: white;
   font-size: 100%;
@@ -32,14 +34,20 @@
 .navbar-right {
   display: flex;
   align-items: center;
-  position: absolute;
-  top: 30px;
+  position: relative;
+  top: 5px;
   right: 18%;
   color: white;
   font-size: 100%;
   cursor: pointer;
 }
+.navbar-left {
+  justify-content: flex-start; /* Aligns items to the start of the container */
+}
 
+.navbar-right {
+  justify-content: flex-end; /* Aligns items to the end of the container */
+}
 .navbar-left ul,
 .navbar-right ul {
   list-style-type: none;
@@ -69,9 +77,9 @@
 }
 
 .navbar-logo {
-  position: absolute;
-  top: 24px;
-  left: 50%;
+  position: relative;
+  top: 1px;
+  right: -60px;
   transform: translateX(-50%);
 }
 
@@ -93,11 +101,27 @@
   margin: auto;
 }
 
-@media screen and (max-width: 600px) {
-  .navbar-left,
+@media screen and (max-width: 16in) {
+ 
   .navbar-right {
-    position: static;
-    margin: auto;
+    display: flex;
+    position: relative;
+    align-items: center;
+    top: -30px;
+    left: 350px;
+    color: white;
+    font-size: 100%;
+    cursor: pointer;
+  }
+  .navbar-left {
+    display: flex;
+  align-items: center;
+  position: relative;
+  top: 30px;
+  left: -400px;
+  color: white;
+  font-size: 100%;
+  cursor: pointer;
   }
   
   .navbar-logo {
@@ -113,8 +137,29 @@
   
   .navbar {
     flex-direction: column;
+    padding: 1px;
   }
 }
+
+/* @media screen and (max-width: 15in){
+
+  .navbar {
+   
+    padding: 100px;
+  }
+
+
+
+
+} */
+
+
+
+
+
+
+
+
 
   .container form .title {
     font-size: 30px;
@@ -364,4 +409,8 @@
   
   .submit:active {
     background-color: #06b;
+  }
+
+  .title{
+    color: black;
   }
