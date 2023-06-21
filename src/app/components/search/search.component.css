@@ -5,25 +5,26 @@
 }
 
 .search-image {
-    width: 98.86vw; /* Set width to 100% of the viewport width */
-    height: 92.5vh;
-    position: relative; /* Position the element */
-    top: -133px; /* Position it at the top of the viewport */
-    left: -2px; /* Position it at the left of the viewport */
-    background-color: #f2f2f2;
+    width: 100vw;
+    height: 92vh;
     z-index: -1;
   }
+
+  .searchnglass{
+    position: absolute;
+    top: 10%;
+    z-index: 9999;
+  left: 36%;
   
+    }
+    
 
   .container {
-    position: relative;
+    overflow: hidden;
   }
   
   
-  .find {
-    position: relative;
-    top: 10px;
-    left:630px;
+  #find {
     z-index: 1;
     color: #27374D;
    font-family: Sora;
@@ -32,43 +33,49 @@
   }
   
 
-  .search-bar {
-    position: relative; /* Updated */
-    top: 20px;
-    left: 630px;
+  #search-bar {
+ 
     z-index: 1;
-    width: 35vw;
-    padding: 10px;
+    width: 35rem;
+    padding: .6rem;
     font-family: Sora;
     font-size: 17px;
-    height: 30px;
+    height: 2rem;
     font-weight: 50%;
     border: 1px solid lightgray;
     transition: border-color 0.3s ease;
   }
-  .search-bar::placeholder {
+  #search-bar::placeholder {
     position: relative;
   }
   
   
-  .search-bar:hover {
+  #search-bar:hover {
     border-color: #19A7CE; /* set the border color on hover */
   }
-  .search-bar:focus {
+  #search-bar:focus {
     border-color: #19A7CE;
     outline: none;  /* set the border color when the search bar is clicked */
   }
   
-.glass-image {
+  /* #glass-image {
   position: relative;
   top: -963px;
-  left: 1280px;  /* Adjust the left value as needed */
+  left: 1280px;  
   z-index: 9999;
   height: 40px;
-}
-.glass-image:hover {
+} */
+
+#glass-image:hover {
   cursor: pointer;
 }
+
+  #glass-image{
+  position: absolute;
+right: 1%;
+z-index: 9999;
+
+  }
 
 @media screen and (max-width: 16in) {
   * {
@@ -77,44 +84,40 @@
 
   .search-image {
     /* Styles for .search-image on screens 16 inches or below */
-    width: 98.7vw;
-    height: 90vh;
-    top: -139px;
-    left: -13px;
+    width: 100vw;
+    height: 92vh;
+
   }
 
   .container {
     /* Styles for .container on screens 16 inches or below */
-    padding: 10px;
+
   }
 
-  .find {
-    /* Styles for .find on screens 16 inches or below */
+  #find {
   
-    top: 5px;
-    left: 30%;
-    font-size: 30px;
-    font-weight: 600;
-
+  top: 5px;
   }
 
-  .search-bar {
-    /* Styles for .search-bar on screens 16 inches or below */
-
+  /* #search-bar {
     top: 20px;
     left: 30%;
     width: 40vw;
     font-size: 15px;
+  } */
+
+  #glass-image {
+   
+  }
+   
+
+.searchnglass{
+  position: absolute;
+  top: 12%;
+  z-index: 9999;
+  left: 32%;
+  
   }
 
-  .glass-image {
-   
-    top: 78px;
-    left: 295px;
-    height: 30px;
-  }
-  
-  .search-bar::placeholder {
-    position: relative;
-  }
+
 }
