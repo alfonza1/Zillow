@@ -1,33 +1,30 @@
 
 * {
     margin: 0;
-     /* Reset default body margin */
-    
         background-color: transparent;
         background: transparent;  /* Chrome 10-25, Safari 5.1-6 */
         background: transparent;
-      
+  
 }
 
 .Trending-Home-Text {
     font-family: 'Sora', sans-serif;
     position: absolute;
-   bottom: -90px; /* Adjust the top value according to your design */
-    /* Adjust the left value according to your design */
-    left: 100px;
+    top: -7%;
     color: rgb(53, 53, 53);
 }
 
-.arrow{
-position:absolute;
-bottom: -450px;
-right:200px;
+#arrow{
+position:relative;
 cursor: pointer;
 transition: transform 0.3s ease, box-shadow 0.5s ease;
+z-index: 999;
+left: 1400px;
+top: -400px;
 }
 
 
-.arrow:hover{
+#arrow:hover{
     transform: scale(1.2);
 
     }
@@ -36,14 +33,15 @@ transition: transform 0.3s ease, box-shadow 0.5s ease;
 
 .grid-container {
     display: grid;
-    position: absolute;
-    grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns as required */
+    position: relative;
+    grid-template-columns: repeat(4, 1fr); 
     grid-template-rows:  repeat(4, 1fr);
-    align-items: start; /* Make the items start from the bottom */
-    bottom: -1000px; /* Create space at the bottom */
-    left: 103px;
-    gap: 40px;
-  
+    align-items: start;
+    top: 150px;
+    left: 5.5%;
+    gap: 3%;
+    width: 55%;
+
 }
 
 .listing-list li {
@@ -92,37 +90,26 @@ transition: transform 0.3s ease, box-shadow 0.5s ease;
 .bedbath:hover{
     cursor: pointer;
 }
-.bedbath{
-    
-    
-}
 
+@media screen and (max-width: 16in) {
 
-/* .hidden {
-    display: none;
-}
+    .grid-container {
 
-.show-more-btn {
-    cursor: pointer;
-    background: #008CBA; 
-    color: white; 
-    padding: 12px 24px;
-    border: none;
-    border-radius: 5px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 20px 2px;
-    bottom: -190px;
-    position: absolute;
-    left: 100px;
+        grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as required */
+        grid-template-rows:  repeat(3, 1fr);
+        width: 75%;
+
+  
+    }
+
+    #arrow{
+        top: -500px;
+        left: 1100px;
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.5s ease;
+        }
+        
 
 }
 
-.show-more-btn:hover {
-    background-color: #4CAF50;
-    color: white;
-}
- */
 

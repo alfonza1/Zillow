@@ -2,19 +2,23 @@
   background-color: transparent;
   background: transparent;  /* Chrome 10-25, Safari 5.1-6 */
   background: transparent;
+  
 }
 
 .search-image {
-    width: 100vw;
-    height: 92vh;
-    z-index: -1;
+  position: relative;
+    width: 1900px;
+    height: 950px;
+    right: 0px;
+    
+
   }
 
   .searchnglass{
     position: absolute;
-    top: 10%;
+    top: 40%;
     z-index: 9999;
-  left: 36%;
+  left: 40%;
   
     }
     
@@ -26,7 +30,7 @@
   
   #find {
     z-index: 1;
-    color: #27374D;
+    color: rgb(0, 0, 0);
    font-family: Sora;
     font-weight: 600;
    
@@ -36,36 +40,34 @@
   #search-bar {
  
     z-index: 1;
-    width: 35rem;
+    width: 31rem;
     padding: .6rem;
     font-family: Sora;
     font-size: 17px;
     height: 2rem;
     font-weight: 50%;
-    border: 1px solid lightgray;
+    border: 2px solid #000000;
     transition: border-color 0.3s ease;
+
   }
   #search-bar::placeholder {
     position: relative;
+    color: black;
+  font-size:15px ;
+
   }
-  
-  
+
   #search-bar:hover {
-    border-color: #19A7CE; /* set the border color on hover */
+   
+    background-color: white;
   }
+
+
   #search-bar:focus {
-    border-color: #19A7CE;
+background-color: white;
     outline: none;  /* set the border color when the search bar is clicked */
   }
   
-  /* #glass-image {
-  position: relative;
-  top: -963px;
-  left: 1280px;  
-  z-index: 9999;
-  height: 40px;
-} */
-
 #glass-image:hover {
   cursor: pointer;
 }
@@ -82,11 +84,16 @@ z-index: 9999;
     /* Styles for all elements on screens 16 inches or below */
   }
 
+  .container {
+    overflow: hidden;
+  }
+  
+
   .search-image {
     /* Styles for .search-image on screens 16 inches or below */
-    width: 100vw;
-    height: 92vh;
-
+   
+width: 1500px;
+height: 850px;
   }
 
   .container {
@@ -98,13 +105,6 @@ z-index: 9999;
   
   top: 5px;
   }
-
-  /* #search-bar {
-    top: 20px;
-    left: 30%;
-    width: 40vw;
-    font-size: 15px;
-  } */
 
   #glass-image {
    
